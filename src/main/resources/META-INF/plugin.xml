@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>io.github.newhoo.restkit.ext.redis</id>
     <name>RestfulBox-Redis</name>
-    <vendor email="huzunrong@foxmail.com" url="https://github.com/newhoo/RESTKit-Redis">RestfulBox</vendor>
+    <vendor email="dev2n@qq.com" url="https://github.com/newhoo/RestfulBox-Redis">RestfulBox</vendor>
 
     <description><![CDATA[
     <h1><a href="https://plugins.jetbrains.com/plugin/14723-restfulbox">RestfulBox</a> Extension for Redis</h1>
@@ -12,7 +12,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-        1.0.1
+        1.0.2
         <ul>
             <li>support simple redis storage and request with RestfulBox plugin</li>
             <br/>
@@ -22,22 +22,14 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="231.1"/>
+    <idea-version since-build="233.6"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html on how to target different products -->
     <!-- uncomment to enable plugin in all products -->
     <depends>com.intellij.modules.platform</depends>
-    <depends>io.github.newhoo.restkit</depends>
+    <depends optional="true" config-file="plugin-restkit.xml">io.github.newhoo.restkit</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
-
-    <extensions defaultExtensionNs="io.github.newhoo.restkit">
-        <restClient implementation="io.github.newhoo.restkit.ext.redis.RedisRestClient$RedisClientProvider"/>
-    </extensions>
-
-    <actions>
-    </actions>
-
 </idea-plugin>

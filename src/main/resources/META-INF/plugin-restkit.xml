@@ -1,0 +1,5 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="io.github.newhoo.restkit">
+        <restClient implementation="io.github.newhoo.restkit.ext.redis.RedisRestClient$RedisClientProvider"/>
+    </extensions>
+</idea-plugin>
