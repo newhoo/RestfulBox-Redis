@@ -13,6 +13,8 @@
 
     <change-notes><![CDATA[
         1.0.3
+        Adapts to RestfulBox 6.0
+
         <ul>
             <li>support simple redis storage and request with RestfulBox plugin</li>
             <br/>
@@ -22,7 +24,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="233.6"/>
+    <idea-version since-build="231.0"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html on how to target different products -->
     <!-- uncomment to enable plugin in all products -->
