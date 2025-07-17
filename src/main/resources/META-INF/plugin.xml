@@ -12,7 +12,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-        1.0.2
+        1.0.3
         <ul>
             <li>support simple redis storage and request with RestfulBox plugin</li>
             <br/>
